@@ -1,0 +1,485 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f7fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos comunes de secciones */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2d3748;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #718096;
+    margin-bottom: 50px;
+}
+
+/* Sección Experiencia */
+.experiencia {
+    background: white;
+}
+
+.experiencia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.experiencia-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencia-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+}
+
+.experiencia-card .icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.experiencia-card h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.experiencia-card p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.tecnologias {
+    text-align: center;
+    padding: 40px;
+    background: #f7fafc;
+    border-radius: 15px;
+}
+
+.tecnologias h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #2d3748;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tag {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.tag:hover {
+    transform: scale(1.1);
+}
+
+/* Sección Catálogo */
+.catalogo {
+    background: #f7fafc;
+}
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.catalogo-card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalogo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.catalogo-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.catalogo-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+.catalogo-card ul {
+    list-style: none;
+}
+
+.catalogo-card ul li {
+    padding: 10px 0;
+    color: #4a5568;
+    position: relative;
+    padding-left: 25px;
+}
+
+.catalogo-card ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Sección Precios */
+.precios {
+    background: white;
+}
+
+.precios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.precio-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 15px;
+    padding: 35px 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.precio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: #667eea;
+}
+
+.precio-card.destacado {
+    border: 3px solid #667eea;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+}
+
+.plan-badge {
+    display: inline-block;
+    background: #e2e8f0;
+    color: #2d3748;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.plan-badge.popular {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.precio-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+.precio {
+    margin-bottom: 30px;
+}
+
+.precio .moneda {
+    font-size: 24px;
+    color: #667eea;
+    font-weight: 700;
+    vertical-align: top;
+}
+
+.precio .cantidad {
+    font-size: 48px;
+    color: #2d3748;
+    font-weight: 700;
+}
+
+.precio .periodo {
+    font-size: 16px;
+    color: #718096;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.features li {
+    padding: 12px 0;
+    color: #4a5568;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 15px;
+}
+
+.features li:last-child {
+    border-bottom: none;
+}
+
+.btn-precio {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-precio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Sección Reseñas */
+.resenas {
+    background: #f7fafc;
+}
+
+.resenas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.resena-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resena-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.estrellas {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.resena-texto {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.cliente {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 2px solid #e2e8f0;
+}
+
+.cliente-avatar {
+    font-size: 48px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.cliente-info h4 {
+    font-size: 18px;
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.cliente-info p {
+    font-size: 14px;
+    color: #718096;
+}
+
+/* Footer */
+.footer {
+    background: #2d3748;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .experiencia-grid,
+    .catalogo-grid,
+    .precios-grid,
+    .resenas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .precio .cantidad {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASATIC - Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="language-picker">
+        <button class="lang-btn">
+            <i class="fas fa-globe"></i> 
+            <span id="current-lang">Español</span>
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="lang-dropdown">
+            <a href="javascript:void(0)" onclick="changeLanguage('es')">
+                <img src="https://flagcdn.com/w20/es.png" alt="ES"> Español
+            </a>
+            <a href="javascript:void(0)" onclick="changeLanguage('en')">
+                <img src="https://flagcdn.com/w20/us.png" alt="EN"> English
+            </a>
+            <a href="javascript:void(0)" onclick="changeLanguage('zh')">
+                <img src="https://flagcdn.com/w20/cn.png" alt="ZH"> 中文
+            </a>
+            <a href="javascript:void(0)" onclick="changeLanguage('hi')">
+                <img src="https://flagcdn.com/w20/in.png" alt="HI"> हिन्दी
+            </a>
+            <a href="javascript:void(0)" onclick="changeLanguage('fr')">
+                <img src="https://flagcdn.com/w20/fr.png" alt="FR"> Français
+            </a>
+            <a href="javascript:void(0)" onclick="changeLanguage('ar')">
+                <img src="https://flagcdn.com/w20/ae.png" alt="AR"> العربية
+            </a>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <h2> 
+            <a href="login.html"> 
+                <img src="logo.png" alt="CASATIC Logo" class="login-logo"> 
+            </a> 
+            <span data-key="welcome_msg">¡Bienvenido!</span>
+        </h2>
+
+        <form action="principal.html">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="user-input" placeholder="Usuario" required>
+            </div>
+            
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="pass-input" placeholder="Contraseña" required>
+            </div>
+            
+            <div class="remember-me">
+                <label>
+                    <input type="checkbox" name="remember"> 
+                    <span data-key="remember_me">Recordarme</span>
+                </label>
+            </div>
+
+            <button type="submit">
+                <i class="fas fa-sign-in-alt"></i> 
+                <span data-key="btn_login">Ingresar</span>
+            </button>
+        </form>
+        
+        <div class="extra-links">
+            <a href="nocontraseña.html" data-key="forgot_pass">¿Olvidaste tu contraseña?</a><br>
+            <a href="registro.html" data-key="register">Regístrate</a>
+        </div>
+    </div>
+
+    <script src="idiomas.js"></script>
+
+</body>
+</html>
