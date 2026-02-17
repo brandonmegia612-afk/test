@@ -159,18 +159,20 @@ section h2 {
   position: relative;
 }
 
-section h2::after {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background-color: var(--primary-hover);
+main section h6 {
+  
+   
+
+  color: var(--text-light);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* ===== INFORMACIÓN DE LA EMPRESA ===== */
-.company-info p {
+container {
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--text-light);
@@ -181,11 +183,14 @@ section h2::after {
 .services ul {
   list-style: none;
   display: grid;
+
   gap: 1rem;
+  width: 100%;
+  scroll-margin-inline: var(--primary);
 }
 
 .services li {
-  background: linear-gradient(135deg, #e6f0fa 0%, #f0f7ff 100%);
+  background: linear-gradient(135deg, #060606 0%, #0d0d0e 100%);
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
   border-left: 4px solid var(--primary);
@@ -457,5 +462,23 @@ section {
     page-break-inside: avoid;
     box-shadow: none;
     border: 1px solid var(--border-color);
+    width: 100%;
+      margin: 200px auto;
   }
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  scroll-margin-inline: var(--primary);
+  color: black;
+}
+main
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    color: black;
 }
