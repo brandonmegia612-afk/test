@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, blue 0%, #0b80ee 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .contact-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px 30px;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-color: #667eea;
+        }
+
+        .icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 22px;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .whatsapp { background: #25D366; }
+        .facebook { background: #1877F2; }
+        .instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .phone { background: #34b7f1; }
+        .email { background: #ea4335; }
+        .telegram { background: #0088cc; }
+        .twitter { background: #1DA1F2; }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-name {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 4px;
+            color: #333;
+        }
+
+        .contact-detail {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .arrow {
+            font-size: 20px;
+            color: #999;
+            margin-left: 10px;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #0066cc 0%, #004a94 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .btn-back:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 102, 204, 0.3);
+        }
+
+        .btn-back:active {
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 600px) {
+            .contact-container {
+                padding: 30px 20px;
+            }
+
+            .contact-item {
+                padding: 15px;
+            }
+
+            .logo {
+                width: 32px;
+                height: 32px;
+            }
+
+            .header h1 {
+                font-size: 26px;
+            }
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="header">
+            <h1>
+                <img src="logo.png" alt="Logo" class="logo">
+                Contáctanos
+            </h1>
+            <p>Nos puedes contactar en nuestras diferentes redes sociales</p>
+        </div>
+
+        <div class="contact-list">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5491234567890" class="contact-item" target="_blank">
+                <img src="whasap.png" alt="whapsapp" class="icon whatsapp">
+                <div class="contact-info">
+                    <div class="contact-name">WhatsApp</div>
+                    <div class="contact-detail">+503 7777-7777</div>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+</body>... (archivo guardado)            </a>                <span class="arrow">→</span>                </div>                    <div class="contact-detail">+503 7777-7777</div>                    <div class="contact-name">WhatsApp</div>                <div class="contact-info">                <img src="whasap.png" alt="whapsapp" class="icon whatsapp">            <a href="https://wa.me/5491234567890" class="contact-item" target="_blank">            <!-- WhatsApp -->        <div class="contact-list">        </div>            <p>Nos puedes contactar en nuestras diferentes redes sociales</p>            </h1>                Contáctanos                <img src="logo.png" alt="Logo" class="logo">            <h1>        <div class="header">    <div class="contact-container"><body></head>    </style>        }            }                font-size: 20px;                height: 40px;                width: 40px;            .icon {            }                padding: 15px;            .contact-item {            }                height: 32px;                width: 32px;            .logo {            }                font-size: 26px;            .header h1 {            }                padding: 30px 20px;            .contact-container {        @media (max-width: 600px) {        }            transform: translateY(-1px);        .btn-back:active {        }            box-shadow: 0 8px 15px rgba(0, 102, 204, 0.3);            transform: translateY(-3px);n        .btn-back:hover {
