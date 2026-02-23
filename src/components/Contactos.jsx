@@ -96,7 +96,7 @@ const Contactos = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="whasap.png" alt="WhatsApp" className="icon" />
+            <img src="https://imgs.search.brave.com/m_vOVInPOseibI2LETTaTbFLlRcZxZK185ssjNM-PoA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTgv/OTMwLzU2NC9zbWFs/bC93aGF0c2FwcC1s/b2dvLXdoYXRzYXBw/LWljb24td2hhdHNh/cHAtdHJhbnNwYXJl/bnQtZnJlZS1wbmcu/cG5n" alt="WhatsApp" className="icon" />
             <div>
               <strong>WhatsApp</strong>
               <div>+503 7777-7777</div>
@@ -104,7 +104,7 @@ const Contactos = () => {
           </a>
 
           <a href="tel:+50322222222" className="contact-item">
-            <img src="telefono.gif" alt="Teléfono" className="icon" />
+            <img src="https://imgs.search.brave.com/RFVWIawutBwud0Y8wIwUBYiZaZGTbFb1L4KD0wzyagI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvMzg3MC8zODcw/Nzk5LnBuZw" alt="Teléfono" className="icon" />
             <div>
               <strong>Teléfono</strong>
               <div>+503 2222-2222</div>
@@ -115,7 +115,7 @@ const Contactos = () => {
             href="mailto:info@casatic.sv"
             className="contact-item"
           >
-            <img src="correo.webp" alt="Email" className="icon" />
+            <img src="https://imgs.search.brave.com/Crf-H_U5tJoq4_mH0n7mC1pCoaPrk30egQSEb6QZ2TQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9nbWFp/bC1sb2dvLWdtYWls/LWljb24tZ29vZ2xl/LWVtYWlsLXNlcnZp/Y2UtbG9nb3R5cGUt/aWNvbi12ZWN0b3It/Z21haWwtbG9nby1n/bWFpbC1pY29uLWdv/b2dsZS1lbWFpbC1z/ZXJ2aWNlLWxvZ290/eXBlLWljb24tdmVj/dG9yLTMwMjc4OTM4/My5qcGc" alt="Email" className="icon" />
             <div>
               <strong>Email</strong>
               <div>info@casatic.sv</div>
