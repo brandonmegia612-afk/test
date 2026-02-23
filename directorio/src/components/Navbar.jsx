@@ -1,4 +1,6 @@
+
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,17 +16,22 @@ function Navbar() {
       </div>
 
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-        <li>Inicio</li>
-      
-        <a href="archivos%20navbar/contactos.jsx"><li>Contactos</li></a>
-        <li>Sobre CASATIC</li>
-        <li>Directorio</li>
-        <li>Solicitud de Socio</li>
-        <li className="login">
-          <i className="fas fa-user-circle"></i> Acceso Socios
-        </li>
-      </ul>
+  <li>
+    <Link to="/">Inicio</Link>
+  </li>
 
+  <li>
+    <Link to="/contactos">Contactos</Link>
+  </li>
+
+  <li>Sobre CASATIC</li>
+  <li>Directorio</li>
+  <li>Solicitud de Socio</li>
+
+  <li className="login">
+    <i className="fas fa-user-circle"></i> Acceso Socios
+  </li>
+</ul>
       <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
         <i className="fas fa-bars"></i>
       </div>
