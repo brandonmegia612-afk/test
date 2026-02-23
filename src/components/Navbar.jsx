@@ -1,8 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { handleNavLinkClick } from "./navbarUtils";
+import "./Navbar.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const handleLinkClick = () => {
+    handleNavLinkClick(setMenuOpen);
+  };
 
   return (
     <nav className="navbar">
@@ -15,17 +25,37 @@ function Navbar() {
       </div>
 
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-        <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/contactos">Contactos</Link></li>
-        <li> <Link to="/sobre">Sobre CASATIC</Link></li>
-        <li>Directorio</li>
-        <li>Solicitud de Socio</li>
+        <li>
+          <Link to="/" className="nav-link" onClick={handleLinkClick}>
+            Inicio
+          </Link>
+        </li>
+        <li>
+          <Link to="/contactos" className="nav-link" onClick={handleLinkClick}>
+            Contactos
+          </Link>
+        </li>
+        <li>
+          <Link to="/sobre" className="nav-link" onClick={handleLinkClick}>
+            Sobre CASATIC
+          </Link>
+        </li>
+        <li>
+          <Link to="/directorio" className="nav-link" onClick={handleLinkClick}>
+            Directorio
+          </Link>
+        </li>
+        <li>
+          <Link to="/solicitud" className="nav-link" onClick={handleLinkClick}>
+            Solicitud de Socio
+          </Link>
+        </li>
         <li className="login">
           <i className="fas fa-user-circle"></i> Acceso Socios
         </li>
       </ul>
 
-      <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+      <div className={`menu-toggle ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
         <i className="fas fa-bars"></i>
       </div>
     </nav>
