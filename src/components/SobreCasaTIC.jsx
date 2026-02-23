@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SobreCasatic = () => {
   return (
@@ -9,63 +10,15 @@ const SobreCasatic = () => {
         href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
       />
 
-      <style>{`
-        :root{
-          --primary:#0066cc;
-          --dark:#2c3e50;
-        }
-        header[role="banner"]{
-          background:white; 
-          border-bottom:1px solid #eee; 
-          position:sticky; 
-          top:0; 
-          z-index:20
-        }
-        .hero{
-          background: linear-gradient(135deg,var(--primary),#004a94);
-          color:white;
-          padding:3.5rem 1rem;
-          text-align:center;
-        }
-        .card-highlight{
-          box-shadow:0 6px 18px rgba(0,0,0,0.06); 
-          border-radius:10px; 
-          padding:1.25rem
-        }
-        .stats{
-          display:flex; 
-          gap:1rem; 
-          flex-wrap:wrap; 
-          justify-content:center
-        }
-        .stat{
-          background:#f7fbff;
-          border-radius:8px;
-          padding:1rem 1.2rem;
-          text-align:center;
-          min-width:140px
-        }
-        footer{
-          background:var(--dark); 
-          color:#ddd; 
-          padding:2rem 1rem
-        }
-        .contact-list li {margin-bottom:.5rem}
-        @media(min-width:768px){ 
-          .container-narrow{
-            max-width:900px; 
-            margin:0 auto
-          } 
-        }
-      `}</style>
+      
 
       <header role="banner" className="container">
         <nav>
           <ul>
             <li>
-              <a href="/" aria-label="Volver al directorio">
+              <Link to="/" aria-label="Volver al directorio">
                 ← Regresar al Directorio
-              </a>
+              </Link>
             </li>
           </ul>
           <ul>

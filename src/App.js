@@ -1,6 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";  
 import Navbar from "./components/Navbar";
 import SobreCasatic from "./components/SobreCasaTIC";
+import Contactos from "./components/Contactos";
 import "./App.css";
 
 function Home() {
@@ -34,6 +36,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<SobreCasatic />} />
+        <Route path="/contactos" element={<Contactos />} />
       </Routes>
     </Router>
   );
