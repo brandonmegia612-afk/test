@@ -15,7 +15,8 @@ function Navbar() {
 
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         <li>Inicio</li>
-        <li>Contactos</li>
+      
+        <a href="archivos%20navbar/contactos.jsx"><li>Contactos</li></a>
         <li>Sobre CASATIC</li>
         <li>Directorio</li>
         <li>Solicitud de Socio</li>
